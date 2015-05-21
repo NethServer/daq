@@ -6,7 +6,7 @@ Prefix: %{_prefix}
 Provides: daq
 Version: 2.0.2
 Release: 1%{?dist}
-Source: daq-%{version}.tar.gz
+Source: https://www.snort.org/downloads/snort/daq-%{version}.tar.gz
 URL: http://www.snort.org/
 
 BuildRequires: autoconf, automake, flex, libpcap-devel
