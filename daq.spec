@@ -4,12 +4,11 @@ Group: Libraries/Network
 Name: daq
 Prefix: %{_prefix}
 Provides: daq
+Version: 2.0.2
 Release: 1%{?dist}
 Source: daq-%{version}.tar.gz
 URL: http://www.snort.org/
-Version: 2.0.2
 
-BuildRoot: /tmp/daqrpm-%{version}
 BuildRequires: autoconf, automake, flex, libpcap-devel
 BuildRequires: libnetfilter_queue-devel, libnfnetlink-devel, libdnet-devel, bison
 
@@ -55,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libsfbpf.so.0.0.1
 %{_libdir}/libsfbpf.so.0
 %{_libdir}/libdaq_static.la
-%{_libdir}/libdaq.so.2.0.2
+%{_libdir}/libdaq.so.%{version}
 %{_libdir}/libsfbpf.so
 %{_libdir}/libdaq.a
 %{_libdir}/libdaq_static.a
